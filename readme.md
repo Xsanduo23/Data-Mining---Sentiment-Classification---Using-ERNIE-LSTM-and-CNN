@@ -31,29 +31,3 @@ models里 为模型
 ```shell
 python run.py
 ```
-
-
-# 问题
-模型早停后，只出现第一张图
-# 方法
-叉掉窗口，让程序继续运行，以得到后续图
-
-
- # 问题
-报缺sklearn 
-# 解决
-安装scikit-learn库包 
-
-
- # 问题
-模型短时间只输出第一轮结果
-# 解决
-不是代码停了，而是运行的很慢。因为python环境里装的是cpu的pytorch，需要gpu显卡版的pytorch
-
-# 问题
-import pyarrow.lib as _lib
-ImportError: DLL load failed while importing lib: 找不到指定的程序
-解决方法，更新pyarrow
-```shell
-pip install --user --upgrade pyarrow -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
